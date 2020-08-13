@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 const Home = () => {
   const view = `
 <div class="characters">
