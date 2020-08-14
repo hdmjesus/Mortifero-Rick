@@ -1,5 +1,5 @@
 {
-  "name": "CharactersMorty",
+  "name": "charactersmorty",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "tailwindcss": "^1.6.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
@@ -33,6 +35,7 @@
     "webpack-dev-server": "^3.11.0",
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.6.2"
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.2.1"
   }
 }
