@@ -1,30 +1,23 @@
-/* eslint-disable no-tabs */
 import getData from '../utils/getData';
 
 const Home = async () => {
-  const { results: characters } = await getData();
-  console.log(characters);
-
+  const characters = await getData();
   const view = `
-<div class="characters">
-	${characters
-    .map(
-      (personaje) => `
-	<article class="character-item">
-			<a href="#/${personaje.id}/">
-				<img src="${personaje.image}" alt="${personaje.name}"/>
-				<h2>${personaje.name}</h2>
-			</a>
-	</article>
-
-`
-    )
-    .join('')}
-	
-
-</div>
-
-`;
+    <div class="Characters">
+      ${characters.results
+        .map(
+          (character) => `
+        <article class="Character-item">
+          <a href="#/${character.id}/">
+            <img src="${character.image}" alt="${character.name}">
+            <h2>${character.name}</h2>
+          </a>
+        </article>
+      `
+        )
+        .join('')}
+    </div>
+  `;
   return view;
 };
 

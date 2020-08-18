@@ -1,20 +1,20 @@
-/* eslint-disable no-tabs */
 const Header = () => {
   const view = `
-<div class="Hearder-main">
-        <divclass="Header-logo">
-            <h1>
-                <a 	href="#/">
-                    Rick and Morty
-                </a>
-            </h1>
-        </div>
-        <div class="Header-nav">
-            <a href="#/about/">
-                About
-            </a>
-        </div>
-</div>    `;
+    <div class="Header-main">
+      <div class="Header-logo">
+        <h1>
+          <a href="/">
+            Mortifero Rick
+          </a>
+        </h1>
+      </div>
+      <div class="Header-nav">
+        <a href="#/about/">
+          About
+        </a>
+      </div>
+    </div>
+  `;
   return view;
 };
 

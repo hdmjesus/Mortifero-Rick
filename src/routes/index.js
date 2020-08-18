@@ -5,24 +5,21 @@ import Error404 from '../pages/Error404';
 import getHash from '../utils/getHash';
 import resolveRoutes from '../utils/resolveRoutes';
 
-const Routes = {
-  '/': Home(),
-  '/:id': Character(),
+const routes = {
+  '/': Home,
+  '/:id': Character,
+  '/contact': 'Contact',
 };
 
 const router = async () => {
-  // renderizado del header
-  const header = null || document.getElementById('Header');
-  const content = null || document.getElementById('Content');
-  header.innerHTML = await Header();
-  // Renderizado de contenido
-  let hash = getHash(); /* Se obtiene el hash */
-  let route = await resolveRoutes(
-    hash
-  ); /* Se valida la ruta que se esta recibiendo para ver que se renderiza */
+  const header = null || document.getElementById('header');
+  const content = null || document.getElementById('content');
 
-  let render = Routes[route] ? Routes[route] : Error404();
-  content.innerHTML = await render;
+  header.innerHTML = await Header();
+  let hash = getHash();
+  let route = await resolveRoutes(hash);
+  let render = routes[route] ? routes[route] : Error404;
+  content.innerHTML = await render();
 };
 
 export default router;
