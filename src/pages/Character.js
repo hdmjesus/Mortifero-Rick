@@ -1,9 +1,9 @@
-import person from '../utils/getData';
+import getData from '../utils/getData';
 import getHash from '../utils/getHash';
 
 const Character = async () => {
   const id = await getHash();
-  const data = await person(id);
+  const data = await getData(id);
   console.log(data);
   const {
     name,
@@ -15,7 +15,7 @@ const Character = async () => {
     location,
     origin,
   } = data;
-  console.log('soy tu papaaa HAHYYSAUSUAS');
+
   const view = `
     <div class="Characters-inner">
       <article class="Characters-card">
