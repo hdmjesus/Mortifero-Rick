@@ -3,7 +3,7 @@ const Header = () => {
     <div class="Header-main">
       <div class="Header-logo">
         <h1>
-          <a href="/" class="text-xl sm:text-2xl lg:text-3xl">
+          <a href="https://hdmjesus.github.io/Mortifero-Rick/" class="text-xl sm:text-2xl lg:text-3xl">
             Mortifero Rick
           </a>
         </h1>
