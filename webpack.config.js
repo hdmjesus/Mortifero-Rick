@@ -28,23 +28,19 @@ module.exports = {
           loader: 'babel-loader', //Utilizar un loader como configuración establecida.
         },
       },
-      // {
-      //   test: /\.css$/,
-      //   use: [
-      //     'style-loader',
-      //     {
-      //       loader: 'css-loader',
-      //       options: {
-      //         importLoaders: 1,
-      //       },
-      //     },
-      //     'postcss-loader',
-      //   ],
-      // },
-      // {
-      //   test: /\.scss$/,
-      //   use: ['style-loader', 'css-loader', 'sass-loader'],
-      // },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+            },
+          },
+          'postcss-loader',
+        ],
+      },
     ],
   },
 

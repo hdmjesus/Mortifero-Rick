@@ -22,7 +22,7 @@ const Character = async () => {
         <img src="${image}" alt="${name}">
         <h2>${name}</h2>
       </article>
-      <article class="Characters-card">
+      <article class="Characters-card ">
         <h3>Episodes: ${episode.length}</h3>
         <h3>Status: ${status}</h3>
         <h3>Species:${species}</h3>
