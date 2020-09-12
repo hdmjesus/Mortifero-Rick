@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const PurgecssPlugin = require('purgecss-webpack-plugin');
 
 module.exports = {
   //Aquí se encuentra toda la configuración de lo que va a suceder. Modulo para exportar.
@@ -58,9 +57,6 @@ module.exports = {
 
     new CopyWebpackPlugin({
       patterns: [{ from: './src/styles/styles.css', to: '' }],
-    }),
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
   ],
 };
