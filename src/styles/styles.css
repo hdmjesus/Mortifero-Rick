@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-.Header-main {
+/* .Header-main {
   @apply flex justify-between font-display p-5 text-base bg-secondary;
 }
 
@@ -46,4 +46,4 @@
 
 .content {
   height: 100%;
-}
+} */
