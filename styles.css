@@ -4,7 +4,7 @@
 
 @tailwind utilities;
 
-.Header-main {
+/* .Header-main {
   @apply flex justify-between font-display p-5 text-base bg-secondary;
 }
 
@@ -24,13 +24,13 @@
 }
 
 .Character-item {
-  @apply w-full mb-6  shadow-xxg;
+  @apply mb-6 shadow-xxg;
 }
 .Character-item a {
   @apply block;
 }
 .Character-item a img {
-  @apply w-full p-3 rounded-lg;
+  @apply w-full  p-3 rounded-lg;
 }
 
 .Character-item h2 {
@@ -46,4 +46,4 @@
 
 .content {
   height: 100%;
-}
+} */
