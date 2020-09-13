@@ -2,6 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+const PATHS = {
+  src: path.join(__dirname, 'src'),
+};
+
 module.exports = {
   //Aquí se encuentra toda la configuración de lo que va a suceder. Modulo para exportar.
   entry: './src/index.js', //Punto de entrada con su dirección.Aquí vive el código inicial y de aquí parte al desarrollo.
