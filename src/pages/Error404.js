@@ -8,3 +8,5 @@ const Error404 = () => {
 };
 
 export default Error404;
+
+//TODO HACER LA PANTALLA DE ERROR
